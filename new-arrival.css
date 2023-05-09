@@ -1,0 +1,158 @@
+/******************** Feature Sections & New Arrival Section ******************/
+.feature{
+     padding: 30px 10px;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+}
+.feature .feat_box{
+     width: 200px;
+     height: 270px;
+     padding: 2px;
+     box-shadow: var(--box-shadow-2);
+     border-radius: var(--border-radius);
+     margin: 0.4rem 0.8rem;
+}
+.feature .feat_box img{
+     max-width: 100%;
+}
+.h4_cont{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 2vh;
+}
+.feature .feat_box h4{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 30px;
+     width: 120px;
+     border-radius: 5px;
+     text-align: center;
+}
+.feature .feat_box .h4-1{
+     background-color: rgb(76, 245, 175);
+}
+.feature .feat_box .h4-2{
+     background-color: rgb(241, 80, 52);
+}
+.feature .feat_box .h4-3{
+     background-color: rgb(76, 245, 175);
+}
+.feature .feat_box .h4-4{
+     background-color: rgb(241, 50, 50);
+}
+.feature .feat_box .h4-5{
+     background-color: rgb(211, 76, 245);
+}
+.feature .feat_box .h4-6{
+     background-color: rgb(252, 130, 93);
+}
+.feature_product{
+     padding: 30px 10px;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+}
+.feature_text{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.feature_text h1{
+     font-size: 2.2rem;
+     font-weight: 900;
+     padding-bottom: 10px;
+     letter-spacing: 1px;
+}
+.feature_text p{
+     font-size: 13px;
+     font-weight: 500;
+     padding-bottom: 2.5rem;
+}
+
+.feature_product .product{
+     width: 260px;
+     height: 380px;
+     padding: 0px 10px;
+     box-shadow: var(--box-shadow-2);
+     border-radius: var(--border-radius);
+     margin: 0.4rem 0.8rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.feature_product .product h3.price{
+     color:var(--logo-color);
+     font-size:1.3rem;
+     font-weight: 900;
+}
+.feature_product .product img{
+     max-width: 100%;
+     box-shadow: -1px -1px 3px rgb(238, 236, 236),
+     1px 1px 3px rgba(0,0,0,0.3);
+     padding: 5px;
+     border-radius: 5px;
+}
+.feature_product .product img#img{
+     height:240px;
+     max-width: 100%;
+}
+.feature_product .product p{
+     padding-top: 1.3rem;
+     font-weight: 300;
+     font-size: 0.9rem;
+     color: gray;
+}
+.product {
+     position: relative;
+}
+.product .rate{
+     display: flex;
+     justify-content: flex-start;
+     padding: 5px 0px;
+}
+.product .rate div{
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+}
+.product .rate div i{
+     color: gold;
+}
+
+.cart{
+     position: absolute;
+     bottom: 1.5rem;
+     right: 2vh;
+}
+.cart h3{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30px;
+     height: 30px;
+     padding-top: 2px;
+     border-radius: 50%;
+     background: rgb(204, 201, 201);
+}
+.cart h3 a{
+     text-decoration: none;
+     color: var(--text-color);
+     font-size: 1.1rem;
+     transition: all 0.3s;
+}
+.cart h3 a:hover{
+     color:var(--logo-color);
+}
+.repair_services{
+     height: 200px;
+     width: 100%;
+     padding: 15px 0px;
+     display: flex;
+     justify-content: center;
+}

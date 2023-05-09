@@ -1,0 +1,233 @@
+:root{
+     --color-1:#fff;
+     --color-2:#dde1e7;
+     --logo-color:crimson;
+     --text-color:#000;
+     --background-1: #fff;
+     --background-2: #dde1e7;
+     --box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+     --box-shadow-2: -1px -1px 3px rgb(238, 236, 236),
+     1px 1px 3px rgba(0,0,0,0.3);
+     --border: none;
+     --outline: none;
+     --border-right: 2px solis #000;
+     --border-radius: 10px;
+     --link-font-size:1.3rem;
+     --link-font-weight:540;
+}
+
+@media only screen and (max-width:768px) {
+     header{
+          width: 100%;
+     }
+     header nav.nav{
+          display: none;
+     }
+     
+     .menu_bar_cont{
+          display: block;
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 0px;
+          height: 100%;
+          background-color:var(--background-1);
+          transition:all 0.4s;
+     }
+     /* open menu bar */
+     .open_menu_cont{
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+     }
+     .open_menu_cont .open_menu{
+          width: 30px;
+          height: 30px;
+          display: block;
+     }
+     .open_menu_cont .open_menu p{
+          height: 3px;
+          width: 26px;
+          background-color:var(--text-color);
+          margin: 5px;
+          padding: 1.4px;
+     }
+     /* close menu bar */
+     .close_menu_cont{
+          position: absolute;
+          top: 1.2rem;
+          right: 1rem;
+     }
+     .close_menu{
+          width: 30px;
+          height: 30px;
+          display:none;
+     }
+     .close_menu_cont .close_menu p{
+          height: 2.5px;
+          width: 23px;
+          background-color:var(--text-color);
+          margin: 5px;
+          padding: 1.4px;
+     }
+     .close_menu_cont .close_menu p:nth-child(1){
+          transform: rotate(45deg) translateX(5px);
+          transition: all 0.4s;
+     }
+     .close_menu_cont .close_menu p:nth-child(2){
+          display: none;
+     }
+     .close_menu_cont .close_menu p:nth-child(3){
+          transform: rotate(-45deg) translateX(5px);
+          transition: all 0.4s;
+     }
+
+     .menu .menu_list{
+          margin-top: 8rem;
+      }
+      .menu .menu_list li{
+           padding: 1.5rem 1.5rem;
+           list-style: none;
+           transition: all 0.6s;
+      }
+      .menu .menu_list li a{
+           text-decoration: none;
+           color: var(--text-color);
+          font-weight: 500;
+           font-size: 1.6rem;
+           position:relative;
+      }
+      .menu .menu_list li a::after{
+           content: '';
+           width: 0;
+           height: 3px;
+           position: absolute;
+           bottom: -6px;
+           left: 0;
+           background-color:var(--logo-color);
+           transition: all 0.5s;
+      }
+      .menu_list li a:hover::after{
+           width: 100%;
+      }
+     .home_text_section{
+          margin-top: 3vh;
+          height: 80vh;
+          max-width: 100%;
+          background-image: url(images/men_wear_home_page.jpeg);
+          background-position: right;
+          background-repeat: no-repeat;
+     }
+     .home_text{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+     .welcome h1{
+          font-size: 2rem;
+          font-weight: 700;
+          animation: welcome 3s linear alternate infinite;
+          position: relative;
+     }
+     .welcome h1 span{
+          color: var(--logo-color);
+     }
+     .welcome h1{
+          font-size: 2rem;
+          font-weight: 700;
+          animation:none;
+          position: relative;
+     }
+     
+     .text{
+          background-color:transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 70%;
+     }
+     .text h4,h2,h1,p,button{
+          padding: 7px;
+          text-align: center;
+     }
+     .text h1{
+          font-size: 2rem;
+          font-weight: 700;
+     }
+     .text h2{
+          font-size: 1.8rem;
+          font-weight: 700;
+     }
+     .text h4{
+          font-size: 1.4rem;
+          font-weight: 700;
+     }
+     .text p{
+          font-size: 1rem;
+          font-weight: 700;
+     }
+     .image{
+          display: none;
+     }
+     /************ Banner Section ************/
+     .banner_cont .banner_box{
+          display: flex;
+          justify-content:center;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 4.3rem;
+          margin: 7px;
+          height: 50vh;
+          min-width:30%;
+          box-shadow: var(--box-shadow-2);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+     }
+}
+@media only screen and (max-width:600px) {
+     .feature .feat_box{
+          width: 100%;
+          height: 450px;
+          padding: 2px;
+          box-shadow: var(--box-shadow-2);
+          border-radius: var(--border-radius);
+          margin: 0.4rem 0.8rem;
+     }
+     .feature_product .product{
+          width: 100%;
+          padding: 20px 10px;
+          box-shadow: var(--box-shadow-2);
+          border-radius: var(--border-radius);
+          margin: 0.9rem 0.8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+     }
+     .feature_product .product img {
+          max-width: 100%;
+          max-height: 100%;
+          box-shadow: -1px -1px 3px rgb(238, 236, 236),
+          1px 1px 3px rgba(0,0,0,0.3);
+          padding: 5px;
+          border-radius: 5px;
+     }
+     .news_text_cont .input_field{
+          padding-top: 10px;
+          display: flex;
+          width:80%;
+     }
+     .news_text_cont .input_field button{
+          height: 39px;
+          width: 120px;
+          background-color: goldenrod;
+          border-radius: 0;
+          border: none;
+          border-radius: 0px 5px 5px 0px;
+          outline: none;
+          font-size: 1.1rem;
+          font-weight: 700;
+     }
+}
